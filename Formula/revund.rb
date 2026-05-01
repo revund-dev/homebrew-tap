@@ -5,21 +5,21 @@
 class Revund < Formula
   desc "Review you can trust. AI code review for TypeScript teams."
   homepage "https://revund.dev"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/revund-dev/revund-cli/releases/download/v0.1.2/revund_0.1.2_darwin_amd64.tar.gz"
-      sha256 "39b126d5804c5e15c59cb785c4fafe9296723b836d561f2a3ba26554e0741440"
+      url "https://github.com/revund-dev/revund-cli/releases/download/v0.1.3/revund_0.1.3_darwin_amd64.tar.gz"
+      sha256 "24ef26678015cd5899dd99fb0a3573d73923399f391e7a4f8fe661a4393eae83"
 
       define_method(:install) do
         bin.install "revund"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/revund-dev/revund-cli/releases/download/v0.1.2/revund_0.1.2_darwin_arm64.tar.gz"
-      sha256 "9ef5c3048d1030b0f520b2c44d0787cd6fd806496b07d7f127dbd69bc09a1d7c"
+      url "https://github.com/revund-dev/revund-cli/releases/download/v0.1.3/revund_0.1.3_darwin_arm64.tar.gz"
+      sha256 "7bd2114d67a4d6bd970281a723f783d81263c8238da29866b60cede429ff27bf"
 
       define_method(:install) do
         bin.install "revund"
@@ -29,15 +29,15 @@ class Revund < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/revund-dev/revund-cli/releases/download/v0.1.2/revund_0.1.2_linux_amd64.tar.gz"
-      sha256 "b79932b461faffc405488fcc096862e9f4f3f89adc8dfd4cdbd24312945dcc0e"
+      url "https://github.com/revund-dev/revund-cli/releases/download/v0.1.3/revund_0.1.3_linux_amd64.tar.gz"
+      sha256 "d3bfdb20ae5f19c602b8e651fbbd36960c710215a93f657bb3030213e10c677b"
       define_method(:install) do
         bin.install "revund"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/revund-dev/revund-cli/releases/download/v0.1.2/revund_0.1.2_linux_arm64.tar.gz"
-      sha256 "76af2d20513397ffa0a4e4813ef97864636d780f6754ff72f6d67f61523fe01c"
+      url "https://github.com/revund-dev/revund-cli/releases/download/v0.1.3/revund_0.1.3_linux_arm64.tar.gz"
+      sha256 "135a11bace47be1f9f8fb3062ee33aa932d025842ae45e50ce7d40428c155b02"
       define_method(:install) do
         bin.install "revund"
       end
